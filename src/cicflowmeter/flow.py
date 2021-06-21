@@ -97,6 +97,8 @@ class Flow:
             "dst_ip": self.dest_ip,
             "src_port": self.src_port,
             "dst_port": self.dest_port,
+            "src_mac": self.src_mac,
+            "dst_mac": self.dest_mac,
             "protocol": self.protocol,
             # Basic information from packet times
             "timestamp": packet_time.get_time_stamp(),
