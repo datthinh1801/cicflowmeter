@@ -28,6 +28,8 @@ class Flow:
             self.src_ip,
             self.src_port,
             self.dest_port,
+            self.src_mac,
+            self.dest_mac,
         ) = packet_flow_key.get_packet_flow_key(packet, direction)
 
         self.packets = []
