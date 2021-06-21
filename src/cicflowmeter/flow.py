@@ -28,6 +28,8 @@ class Flow:
             self.src_ip,
             self.src_port,
             self.dest_port,
+            self.src_mac,
+            self.dest_mac,
         ) = packet_flow_key.get_packet_flow_key(packet, direction)
 
         self.packets = []
@@ -95,6 +97,8 @@ class Flow:
             "dst_ip": self.dest_ip,
             "src_port": self.src_port,
             "dst_port": self.dest_port,
+            "src_mac": self.src_mac,
+            "dst_mac": self.dest_mac,
             "protocol": self.protocol,
             # Basic information from packet times
             "timestamp": packet_time.get_time_stamp(),
